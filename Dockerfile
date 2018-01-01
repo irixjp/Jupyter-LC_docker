@@ -87,7 +87,7 @@ SHELL ["/bin/bash", "-c"]
 RUN apt-get update && \
     apt-get -y install sshpass openssl ipmitool libssl-dev libffi-dev groff && \
     apt-get clean && rm -rf /var/lib/apt/lists/* && \
-    pip install requests paramiko ansible ansible-tower-cli awscli boto3
+    pip install requests paramiko ansible ansible-tower-cli awscli boto boto3
 
 ### Utilities
 RUN apt-get update && apt-get install -y virtinst dnsutils zip tree jq && \
